@@ -42,7 +42,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
         private void MostraProdottiNelCarrello(List<int> carrello)
         {
             // Ottieni gli articoli nel carrello dalla classe Carrello
-            List<Ecommerce> prodottiNelCarrello = Carrello.GetArticoliNelCarrello();
+            List<Articolo> prodottiNelCarrello = Carrello.GetArticoliNelCarrello();
 
             // Assegna la lista di prodotti al controllo GridView o Repeater
             rptProdottiNelCarrello.DataSource = prodottiNelCarrello;
@@ -52,7 +52,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
         private void CalcolaEVisualizzaTotale(List<int> carrello)
         {
             // Ottieni gli articoli nel carrello dalla classe Carrello
-            List<Ecommerce> prodottiNelCarrello = Carrello.GetArticoliNelCarrello();
+            List<Articolo> prodottiNelCarrello = Carrello.GetArticoliNelCarrello();
 
             // Calcola il totale
             decimal totale = prodottiNelCarrello.Sum(a => a.Prezzo);

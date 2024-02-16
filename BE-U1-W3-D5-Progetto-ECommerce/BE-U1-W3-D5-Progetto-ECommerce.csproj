@@ -195,7 +195,7 @@
       <DependentUpon>Carrello.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Ecommerce.cs" />
+    <Compile Include="Articolo.cs" />
     <Compile Include="Dettagli.aspx.cs">
       <DependentUpon>Dettagli.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

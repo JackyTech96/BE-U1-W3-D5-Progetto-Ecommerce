@@ -20,7 +20,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
                     int productId = Convert.ToInt32(Request.QueryString["Id"]);
 
                     // Utilizza l'ID del prodotto per ottenere i dettagli del prodotto
-                    Ecommerce prodotto = DatabaseSimulato.GetDettagliProdotto(productId);
+                    Articolo prodotto = DatabaseSimulato.GetDettagliProdotto(productId);
 
                     // Verifica se il prodotto è valido
                     if (prodotto != null)
@@ -37,7 +37,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
             }
         }
 
-        private void PopolaDettagliProdotto(Ecommerce prodotto)
+        private void PopolaDettagliProdotto(Articolo prodotto)
         {
             // Popola i controlli nella pagina con i dettagli del prodotto
             lblNomeProdotto.Text = prodotto.Nome;

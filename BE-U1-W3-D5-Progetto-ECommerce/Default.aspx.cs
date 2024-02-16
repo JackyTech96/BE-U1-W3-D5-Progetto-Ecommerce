@@ -15,7 +15,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
             if (!IsPostBack)
             {
                 // Ottiene la lista di articoli dal database simulato
-                List<Ecommerce> listaArticoli = DatabaseSimulato.GetListaArticoli();
+                List<Articolo> listaArticoli = DatabaseSimulato.GetListaArticoli();
 
                 // Assegna la lista di articoli al Repeater
                 rptArticoli.DataSource = listaArticoli;
@@ -40,7 +40,7 @@ namespace BE_U1_W3_D5_Progetto_ECommerce
                 // Se il comando è "AggiungiAlCarrello"
 
                 // Ottieni i dettagli dell'articolo dal database simulato in base all'ID
-                Ecommerce articolo = DatabaseSimulato.GetDettagliProdotto(articoloId);
+                Articolo articolo = DatabaseSimulato.GetDettagliProdotto(articoloId);
 
                 // Aggiungi l'articolo al carrello
                 if (articolo != null)
